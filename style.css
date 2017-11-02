@@ -58,6 +58,10 @@ input:not(:checked) + label > h1 {
   color: rgba(0, 0, 0, .3);
 }
 
+input:not(:checked) + label:hover > h1 {
+  color: rgba(0, 0, 0, .6);
+}
+
 a {
   font-size: 1vw;
   text-decoration: none;
