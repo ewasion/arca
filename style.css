@@ -1,0 +1,120 @@
+body {
+  font-family: 'Ubuntu Mono', sans-serif;
+  background-color: #009688;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#container {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 70vh;
+  width: 70vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+#container > label {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2vw;
+  transition: all 200ms;
+}
+
+h1:hover {
+  color: rgba(0, 0, 0, .4);
+}
+
+input:checked + label {
+  background-color: transparent;
+}
+
+input:not(:checked) + label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms;
+}
+
+input:not(:checked) + label > h1 {
+  color: rgba(0, 0, 0, .3);
+}
+
+a {
+  font-size: 1vw;
+  text-decoration: none;
+  color: #99d5cf;
+}
+
+a:hover {
+  color: #66c0b7;
+  transition: all 50ms;
+}
+
+a:nth-child(even):after {
+  content: '\A';
+  white-space: pre;
+}
+
+.category {
+  position: relative;
+  display: inline-block;
+  height: 19vh;
+  width: 12vw;
+  border: solid 1px rgba(0, 0, 0, .3);
+  margin: 2vh;
+  overflow: hidden;
+  background-color: #32ab9f;
+}
+
+.category:hover {
+  overflow: auto;
+}
+
+/*
+  Category colors
+*/
+
+label[for=tools] {
+  background-color: #ffbe4f;
+}
+
+label[for=dev] {
+  background-color: #6bd2db;
+}
+
+label[for=work] {
+  background-color: #0ea7b5;
+}
+
+label[for=stuff] {
+  background-color: #e8702a;
+}
+
+
+label[for=more-stuff] {
+  background-color: #9ed670;
+}
+
+
+label[for=ok] {
+  background-color: #4d7358;
+}
